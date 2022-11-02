@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .Activity2 {
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: relative;
+            animation: mymove 2s 1s infinite;
+            text-align: right;
+        }
+
+        @keyframes mymove {
+            from {
+                right: 0px;
+                width: 200px;
+                height: 200px;
+                transform: rotate(0deg);
+                border-radius: 0px
+            }
+
+            to {
+                right: 0px;
+                width: 200px;
+                height: 200px;
+                transform: rotate(180deg);
+            }
+        }
+
+        .Activity1{
+            background: yellow;
+            border: 2px solid black;
+
+            width: 22%;
+            height: auto;
+            transition: all 0s ease-in-out;
+            align-items: center;
+            text-align: center;
+        }
+
+        .Activity1:hover {
+            transform: rotate(180deg);
+        }
+
+        .gallary {
+            width: 100%;
+            border: 1px solid yellowgreen;
+        }
+
+        .gallary img {
+            width: 21%;
+            padding: 5px;
+            border: 2px solid greenyellow;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        .gallary img:hover {
+            filter: grayscale(50%);
+
+        }
+
+        @media screen and (max-width: 300px) {
+            .gallary img {
+                width: 95%;
+            }
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 800px) {
+            .gallary img {
+                width: 40%;
+            }
+        }
+
+        .first {
+            filter: grayscale(100%);
+        }
+
+        .second {
+            filter: blur(3px);
+        }
+
+        .third {
+            filter: opacity(30px);
+        }
+
+        .Activity7 {
+            float: left;
+            width: 50%;
+        }
+
+        .Activity6 {
+            float: left;
+            width: 50%;
+            text-shadow: 5px palevioletred;
+        }
+
+        .Activity6 h4{
+            font-size: 39px;
+            color: #afa7a7;
+            text-shadow: 4px 2px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LabActivity1</h1>
+
+    <div class="Activity1">This is is no one who loves pain itself, who seeks after it and wants to have it , simply because
+        it is pain... </div>
+        <br><br>
+    <h1>LabActivity2</h1>
+    <div class="Activity2"></div>
+
+    <h1>LabActivity3</h1>
+    <div>
+        <img src="images (1).jpg" alt="" class="first" width="220px" height="200px">
+        <img src="images (2).jpg" alt="" class="second" width="220px" height="200px">
+        <img src="images (3).jpg" alt="" class="third" width="220px" height="200px">
+    </div>
+
+    <h2>LabActivity4</h2>
+    <div class="gallary">
+        <img src="images (1).jpg" alt="image 1">
+        <img src="images (1).jpg" alt="image 2">
+        <img src="images (1).jpg" alt="image 3">
+        <img src="images (1).jpg" alt="image 4">
+    </div>
+    <h1>LabActivity5</h1>
+
+    <div class="Activity6">
+        <h4>Text Shadow effect!</h4>
+    </div>
+
+    <div class="Activity7">
+        <figure>
+            <img src="images (1).jpg" alt="" width="220px" height="180px">
+            <figcaption>This is the image(1).jpg</figcaption>
+        </figure>
+    </div>
+
+</body>
+
+</html>
